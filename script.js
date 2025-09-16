@@ -610,20 +610,20 @@ function loadSpotifyPlaylist(playlistNumber) {
     const playlists = {
         1: {
             // Ganti dengan playlist pertama kamu
-            embedUrl: 'https://open.spotify.com/embed/playlist/37i9dQZF1DWYtQSOiZF6hj?si=0b945793c2934ba1',
-            name: 'Special Mix',
+            embedUrl: 'https://open.spotify.com/playlist/1t2n19DmVQKdZc5WrE8d6F?si=W78OL1ENTyOUySQLE9AEbg&pi=Wmlci1WAQ-azQ',
+            name: 'Special Mix: We Are',
             description: 'All these songs are special because of you'
         },
         2: {
             // Ganti dengan playlist kedua kamu
-            embedUrl: 'https://open.spotify.com/embed/playlist/3gPSenyxZMdB3A54HeEruz?si=6b4dec830d4f4a48',
-            name: 'Love Songs Collection',
+            embedUrl: 'https://open.spotify.com/playlist/48b5Xmg4PuKtHP4oulgnCm?si=Q8q9buc2TgCblwXC0ooHHg&pi=ZCs8-nb7SzKpb',
+            name: 'Love Songs: Midnight and US',
             description: 'The ultimate love songs playlist for us ❤️'
         },
         3: {
             // Ganti dengan playlist ketiga kamu
-            embedUrl: 'https://open.spotify.com/embed/playlist/4dlQ4JHE6abxv38aae2HL1?si=95730613199e4dad',
-            name: 'Happy Memories',
+            embedUrl: 'https://open.spotify.com/playlist/5xLN9AGBJiGF5QCwg5TPIa?si=RG-Z9jJrTiGkdarfaO-iNA',
+            name: 'Voyage',
             description: 'Melodies that take us back to beautiful memories'
         }
     };
@@ -1192,3 +1192,4 @@ function handleContinueNavigation() {
     }
 
 }
+
