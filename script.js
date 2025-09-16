@@ -225,11 +225,11 @@ function startTypewriter() {
     
     const fullMessage = `Hi,
 
-Happy Birthday!
+Happy 1st Mensive, Love!
 
-Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik banget! Aku selalu percaya kalau kamu bisa melewati semua tantangan dengan kekuatan dan semangat yang luar biasa.
+Can’t believe it’s already been a month with you. Every day feels so much better with you around, and I’m just really glad it’s us. 
 
-Terima kasih udah jadi bagian hidup aku yang paling berharga. Kamu bener-bener bikin hari-hari aku jadi lebih berarti dan penuh warna. Semoga di tahun yang baru ini, kamu makin bahagia, makin sukses, dan tentunya makin cantik (walaupun udah cantik banget sih!).
+Thank you for being here, for your patience, and for making the little things feel special. Here’s to many more months together.
 
 I love you so much! 💕`;
     
@@ -266,7 +266,7 @@ function skipTypewriter() {
         clearInterval(typewriterInterval);
         const messageContent = document.querySelector('.message-content');
         if (messageContent) {
-            const fullMessage = `Hi Cel,<br><br>Happy Birthday!<br><br>Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik banget! Aku selalu percaya kalau kamu bisa melewati semua tantangan dengan kekuatan dan semangat yang luar biasa.<br><br>Terima kasih udah jadi bagian hidup aku yang paling berharga. Kamu bener-bener bikin hari-hari aku jadi lebih berarti dan penuh warna. Semoga di tahun yang baru ini, kamu makin bahagia, makin sukses, dan tentunya makin cantik (walaupun udah cantik banget sih!).<br><br>I love you so much! 💕`;
+            const fullMessage = `Hi sayangku Axton Miles,<br><br>Happy 1st Mensive, Love!<br><br>Can’t believe it’s already been a month with you. Every day feels lighter and warmer with you around, and I’m really grateful it’s us. Thank you for being here, for your patience, and for making the little things feel special. Here’s to many more months together.<br><br>I love you so much! 💕`;
             messageContent.innerHTML = fullMessage;
             isTyping = false;
             messageContent.scrollTop = messageContent.scrollHeight;
@@ -291,10 +291,10 @@ function initializeGallery() {
         </div>
         <div class="photobox-progress">READY TO PRINT</div>
         <div class="photo-display">
-            <div class="photo-placeholder">Press MULAI CETAK to start photo session</div>
+            <div class="photo-placeholder">Press START PRINTING to start photo session</div>
         </div>
         <div class="photobox-controls">
-            <button class="photo-btn">MULAI CETAK</button>
+            <button class="photo-btn">START PRINTING</button>
         </div>
     `;
     
@@ -357,7 +357,7 @@ function startPhotoShow() {
     
     console.log('Total photos:', photos.length);
     
-    photoBtn.textContent = 'MENCETAK...';
+    photoBtn.textContent = 'PRINTING...';
     photoBtn.disabled = true;
     progressDiv.textContent = 'INITIALIZING CAMERA...';
     
@@ -378,7 +378,7 @@ function startPhotoShow() {
             <div class="photo-frames-container">
                 ${framesHTML}
             </div>
-            <div class="photo-strip-footer">💕 BIRTHDAY MEMORIES 💕</div>
+            <div class="photo-strip-footer">💕 MEMORIES 💕</div>
         </div>
         <div class="scroll-indicator">⬇ Scroll Down ⬇</div>
     `;
@@ -519,7 +519,7 @@ function startNewSession() {
     
     // Reset for new session
     progressDiv.textContent = 'READY TO PRINT';
-    photoBtn.textContent = 'MULAI CETAK';
+    photoBtn.textContent = 'START PRINTING';
     
     // Remove old listener and add original
     photoBtn.removeEventListener('click', startNewSession);
@@ -566,8 +566,8 @@ function initializeMusicPlayer() {
                 <button class="playlist-btn" data-playlist="3">Playlist 3</button>
             </div>
             <div class="music-info">
-                <div class="current-playlist">Now Playing: Birthday Special Mix</div>
-                <div class="playlist-description">Lagu-lagu spesial untuk hari istimewa kamu ✨</div>
+                <div class="current-playlist">Now Playing: Special Mix</div>
+                <div class="playlist-description">All these songs are special because of you</div>
             </div>
         </div>
     `;
@@ -611,20 +611,20 @@ function loadSpotifyPlaylist(playlistNumber) {
         1: {
             // Ganti dengan playlist pertama kamu
             embedUrl: 'https://open.spotify.com/embed/playlist/37i9dQZF1DWYtQSOiZF6hj?si=0b945793c2934ba1',
-            name: 'Birthday Special Mix',
-            description: 'Lagu-lagu spesial untuk hari istimewa kamu ✨'
+            name: 'Special Mix',
+            description: 'All these songs are special because of you'
         },
         2: {
             // Ganti dengan playlist kedua kamu
             embedUrl: 'https://open.spotify.com/embed/playlist/3gPSenyxZMdB3A54HeEruz?si=6b4dec830d4f4a48',
             name: 'Love Songs Collection',
-            description: 'Koleksi lagu cinta terbaik untuk kita ❤️'
+            description: 'The ultimate love songs playlist for us ❤️'
         },
         3: {
             // Ganti dengan playlist ketiga kamu
             embedUrl: 'https://open.spotify.com/embed/playlist/4dlQ4JHE6abxv38aae2HL1?si=95730613199e4dad',
             name: 'Happy Memories',
-            description: 'Lagu-lagu yang mengingatkan kenangan indah 🌟'
+            description: 'Melodies that take us back to beautiful memories'
         }
     };
     
@@ -1190,4 +1190,5 @@ function handleContinueNavigation() {
         default:
             showScreen('main');
     }
+
 }
